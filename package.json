@@ -1,0 +1,26 @@
+{
+  "name": "testcafe-ci-demo",
+  "version": "1.0.0",
+  "description": "This repository contains sample TestCafe tests used in the [Continuous Integration tutorials](https://devexpress.github.io/testcafe/documentation/continuous-integration/).",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "testcafe chrome:headless tests/**/* -r xunit:/tmp/test-results/res.xml"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wan-si/testcafe-ci-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wan-si/testcafe-ci-demo/issues"
+  },
+  "homepage": "https://github.com/wan-si/testcafe-ci-demo#readme",
+  "devDependencies": {
+    "testcafe": "^1.9.4",
+    "testcafe-reporter-xunit": "^2.1.0"
+  }
+}
