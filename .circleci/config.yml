@@ -13,7 +13,8 @@ jobs:
           - v1-dependencies-{{ checksum "package.json" }}
           - v1-dependencies-
 
-      - run: yarn install
+      - run: 
+        command: docker run -v `pwd`:/testcafe-ci-demo -it testcafe/testcafe chromium /testcafe-ci-demo/tests/test.js
 
       - save_cache:
           paths:
